@@ -12,6 +12,7 @@ License:	GPL
 Group:		Sound
 Url:		http://sc68.atari.org/
 Source:		http://prdownloads.sourceforge.net/sc68/%{name}-%{version}.tar.bz2
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:	readline-devel
 BuildRequires:	ncurses-devel
 BuildRequires:	zlib-devel
