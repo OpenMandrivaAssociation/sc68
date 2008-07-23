@@ -1,6 +1,6 @@
 %define	name	sc68
 %define	version	2.2.1
-%define release %mkrel 5
+%define release %mkrel 7
 %define major 2.2.1
 %define libname %mklibname sc68_ %{major}
 
