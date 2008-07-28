@@ -1,6 +1,6 @@
 %define	name	sc68
 %define	version	2.2.1
-%define release %mkrel 7
+%define release %mkrel 8
 %define major 2.2.1
 %define libname %mklibname sc68_ %{major}
 
@@ -8,7 +8,7 @@ Summary:	SC68 - Atari ST and Amiga music player
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-License:	GPL
+License:	GPLv2+
 Group:		Sound
 Url:		http://sc68.atari.org/
 Source:		http://prdownloads.sourceforge.net/sc68/%{name}-%{version}.tar.bz2
@@ -61,6 +61,8 @@ building applications with sc68.
 %setup -q
 
 %build
+%define _disable_ld_no_undefined 1
+%define _disable_ld_as_needed 1
 %configure2_5x --enable-doc
 %make
 cd doc
