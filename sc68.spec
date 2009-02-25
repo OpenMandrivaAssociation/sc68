@@ -1,6 +1,6 @@
 %define	name	sc68
 %define	version	2.2.1
-%define release %mkrel 9
+%define release %mkrel 10
 %define major 2.2.1
 %define libname %mklibname sc68_ %{major}
 
@@ -12,6 +12,7 @@ License:	GPLv2+
 Group:		Sound
 Url:		http://sc68.atari.org/
 Source:		http://prdownloads.sourceforge.net/sc68/%{name}-%{version}.tar.bz2
+Patch: sc68-2.2.1-format-string.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:	readline-devel
 BuildRequires:	ncurses-devel
@@ -59,6 +60,7 @@ building applications with sc68.
 
 %prep
 %setup -q
+%patch -p1
 
 %build
 %define _disable_ld_no_undefined 1
