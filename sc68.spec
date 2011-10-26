@@ -1,19 +1,17 @@
-%define	name	sc68
-%define	version	2.2.1
-%define release %mkrel 12
 %define major 2.2.1
 %define libname %mklibname sc68_ %{major}
+%define develname %mklibname -d %name
 
 Summary:	SC68 - Atari ST and Amiga music player
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		sc68
+Version:	2.2.1
+Release:	13
 License:	GPLv2+
 Group:		Sound
 Url:		http://sc68.atari.org/
 Source:		http://prdownloads.sourceforge.net/sc68/%{name}-%{version}.tar.bz2
 Patch: sc68-2.2.1-format-string.patch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
+
 BuildRequires:	readline-devel
 BuildRequires:	ncurses-devel
 BuildRequires:	zlib-devel
@@ -42,14 +40,16 @@ on sc68 official web site <http://sashipa.ben.free.fr/sc68>.
 This package contains the shared libraries required by sc68.
 
 
-%package -n %libname-devel
+%package -n %{develname}
 Summary: Development files of the sc68 sound emulator
 Group: Development/C
 Requires: %libname = %version
 Provides: %name-devel = %version-%release
 Provides: lib%name-devel = %version-%release
+Provides: %{libname}-devel = %version-%release
+Obsoletes: %{mklibname sc68_2.2.1 -d}
 
-%description -n %libname-devel
+%description -n %{develname}
 sc68 is an Atari ST and Amiga music player. It can play special files
 (.sc68). This file encapsulates orgininal music files and possibly the
 program to play it.  You can find a very large collection of this file
@@ -105,7 +105,7 @@ rm -rf %buildroot
 %_libdir/lib*.so.*
 
 
-%files -n %libname-devel
+%files -n %{develname}
 %defattr(-, root, root)
 %doc doc/html
 %_bindir/sc68-config
