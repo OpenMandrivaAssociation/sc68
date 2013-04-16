@@ -5,7 +5,7 @@
 Summary:	SC68 - Atari ST and Amiga music player
 Name:		sc68
 Version:	2.2.1
-Release:	13
+Release:	14
 License:	GPLv2+
 Group:		Sound
 Url:		http://sc68.atari.org/
@@ -71,19 +71,10 @@ cd doc
 make
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 rm -f %buildroot%_libdir/*a
 
 %clean
-rm -rf %buildroot
-
-%if %mdkversion < 200900
-%post -n %{libname} -p /sbin/ldconfig
-%endif
-%if %mdkversion < 200900
-%postun -n %{libname} -p /sbin/ldconfig
-%endif
 
 %post
 %_install_info sc68.info
