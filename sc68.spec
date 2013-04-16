@@ -5,7 +5,7 @@
 Summary:	SC68 - Atari ST and Amiga music player
 Name:		sc68
 Version:	2.2.1
-Release:	14
+Release:	15
 License:	GPLv2+
 Group:		Sound
 Url:		http://sc68.atari.org/
@@ -76,12 +76,6 @@ rm -f %buildroot%_libdir/*a
 
 %clean
 
-%post
-%_install_info sc68.info
-
-%postun
-%_remove_install_info sc68.info
-
 %files
 %defattr(-, root, root)
 %doc AUTHORS COPYING ChangeLog INSTALL NEWS README
@@ -111,7 +105,7 @@ rm -f %buildroot%_libdir/*a
 - rebuild
   dropped major from devel pkg
 
-* Sat Sep 17 2011 Götz Waschk <waschk@mandriva.org> 2.2.1-12
+* Sat Sep 17 2011 GÃ¶tz Waschk <waschk@mandriva.org> 2.2.1-12
 + Revision: 700122
 - rebuild
 
@@ -119,15 +113,15 @@ rm -f %buildroot%_libdir/*a
 + Revision: 442816
 - rebuild
 
-* Wed Feb 25 2009 Götz Waschk <waschk@mandriva.org> 2.2.1-10mdv2009.1
+* Wed Feb 25 2009 GÃ¶tz Waschk <waschk@mandriva.org> 2.2.1-10mdv2009.1
 + Revision: 344772
 - fix format string
 
-* Tue Jul 29 2008 Götz Waschk <waschk@mandriva.org> 2.2.1-9mdv2009.0
+* Tue Jul 29 2008 GÃ¶tz Waschk <waschk@mandriva.org> 2.2.1-9mdv2009.0
 + Revision: 252458
 - rebuild
 
-* Mon Jul 28 2008 Götz Waschk <waschk@mandriva.org> 2.2.1-8mdv2009.0
+* Mon Jul 28 2008 GÃ¶tz Waschk <waschk@mandriva.org> 2.2.1-8mdv2009.0
 + Revision: 250889
 - update license
 - fix build by disabling --as-needed and --no-undefined
@@ -142,52 +136,52 @@ rm -f %buildroot%_libdir/*a
   + Olivier Blin <blino@mandriva.org>
     - restore BuildRoot
 
-* Wed Jul 25 2007 Götz Waschk <waschk@mandriva.org> 2.2.1-5mdv2008.0
+* Wed Jul 25 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.2.1-5mdv2008.0
 + Revision: 55243
 - Import sc68
 
 
 
-* Thu Jul 20 2006 Götz Waschk <waschk@mandriva.org> 2.2.1-5mdk
+* Thu Jul 20 2006 GÃ¶tz Waschk <waschk@mandriva.org> 2.2.1-5mdk
 - Rebuild
 
-* Mon Jan 23 2006 Götz Waschk <waschk@mandriva.org> 2.2.1-4mdk
+* Mon Jan 23 2006 GÃ¶tz Waschk <waschk@mandriva.org> 2.2.1-4mdk
 - Rebuild
 - use mkrel
 
-* Fri Jan 21 2005 G�tz Waschk <waschk@linux-mandrake.com> 2.2.1-3mdk
+* Fri Jan 21 2005 Götz Waschk <waschk@linux-mandrake.com> 2.2.1-3mdk
 - rebuild for new readline
 
-* Fri Dec  3 2004 G�tz Waschk <waschk@linux-mandrake.com> 2.2.1-2mdk
+* Fri Dec  3 2004 Götz Waschk <waschk@linux-mandrake.com> 2.2.1-2mdk
 - fix URL
 
-* Wed Nov 26 2003 G�tz Waschk <waschk@linux-mandrake.com> 2.2.1-1mdk
+* Wed Nov 26 2003 Götz Waschk <waschk@linux-mandrake.com> 2.2.1-1mdk
 - new version
 
-* Fri Sep 26 2003 G�tz Waschk <waschk@linux-mandrake.com> 2.2.0-2mdk
+* Fri Sep 26 2003 Götz Waschk <waschk@linux-mandrake.com> 2.2.0-2mdk
 - enable devel docs
 - fix buildrequires
 - fix devel requrires
 
-* Fri Sep 26 2003 G�tz Waschk <waschk@linux-mandrake.com> 2.2.0-1mdk
+* Fri Sep 26 2003 Götz Waschk <waschk@linux-mandrake.com> 2.2.0-1mdk
 - add devel package
 - drop patch
 - remove xmms stuff
 - new version
 
-* Wed Mar 12 2003 G�tz Waschk <waschk@linux-mandrake.com> 1.2.0-5mdk
+* Wed Mar 12 2003 Götz Waschk <waschk@linux-mandrake.com> 1.2.0-5mdk
 - fix buildrequires
 
-* Tue Mar 11 2003 G�tz Waschk <waschk@linux-mandrake.com> 1.2.0-4mdk
+* Tue Mar 11 2003 Götz Waschk <waschk@linux-mandrake.com> 1.2.0-4mdk
 - mklibname macro
 
-* Fri Dec 27 2002 G�tz Waschk <waschk@linux-mandrake.com> 1.2.0-3mdk
+* Fri Dec 27 2002 Götz Waschk <waschk@linux-mandrake.com> 1.2.0-3mdk
 - clean unpackaged files
 - fix build
 
-* Sat Mar  2 2002 G�tz Waschk <waschk@linux-mandrake.com> 1.2.0-2mdk
+* Sat Mar  2 2002 Götz Waschk <waschk@linux-mandrake.com> 1.2.0-2mdk
 - really fix info dir entry
 
-* Tue Feb  5 2002 G�tz Waschk <waschk@linux-mandrake.com> 1.2.0-1mdk
+* Tue Feb  5 2002 Götz Waschk <waschk@linux-mandrake.com> 1.2.0-1mdk
 - fixed info entry
 - initial package
