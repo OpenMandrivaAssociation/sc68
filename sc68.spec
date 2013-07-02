@@ -2,10 +2,10 @@
 %define libname %mklibname sc68_ %{major}
 %define develname %mklibname -d %name
 
-Summary:	- Atari ST and Amiga music player
+Summary:	Atari ST and Amiga music player
 Name:		sc68
 Version:	2.2.1
-Release:	15
+Release:	16
 License:	GPLv2+
 Group:		Sound
 Url:		http://sc68.atari.org/
