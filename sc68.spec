@@ -5,7 +5,7 @@
 Summary:	Atari ST and Amiga music player
 Name:		sc68
 Version:	2.2.1
-Release:	16
+Release:	17
 License:	GPLv2+
 Group:		Sound
 Url:		http://sc68.atari.org/
