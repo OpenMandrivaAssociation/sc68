@@ -8,7 +8,7 @@ Version:	2.2.1
 Release:	17
 License:	GPLv2+
 Group:		Sound
-Url:		http://sc68.atari.org/
+Url:		https://sc68.atari.org/
 Source:		http://prdownloads.sourceforge.net/sc68/%{name}-%{version}.tar.bz2
 Patch: sc68-2.2.1-format-string.patch
 
